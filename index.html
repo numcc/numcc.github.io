@@ -152,9 +152,9 @@
             <p><h3 class="title is-3">Overview</h3>
               <img src="static/images/pipeline.png" alt="Overview" width="100%">
               Given an input single-view RGB-D image, we first unproject the pixels into the 3D world frame, resulting in a textured partial point cloud. 
-              We then employ a standard ViT to extract visual features from the partial point cloud. Next, we introduce our Neighborhood Decoder, 
+              We then employ a standard ViT to extract visual features from the partial point cloud. Next, we introduce our Neighborhood decoder, 
               which utilizes the extracted visual features to estimate the UDF and RGB values of each query point  in 3D space. 
-               The Neighborhood Decoder allows each query point (blue star in the figure) to attend to only a small set of features in its neighborhood and incorporate fine-scale information 
+               The Neighborhood decoder allows each query point (blue star in the figure) to attend to only a small set of features in its neighborhood and incorporate fine-scale information 
                directly from the input, significantly improving the efficiency and reconstruction quality. During inference, the predicted UDF is used to shift the query points to the surface of the 3D object, 
                leading to high-quality 3D reconstruction. Repulsive forces between query points are employed to fix the hole artifacts in the standard UDF.
 
